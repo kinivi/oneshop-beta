@@ -95,7 +95,7 @@ div.container-fluid {
     margin: 15px 0;
 }
 
-.items .item {
+.items {
 }
 
 .boxes-title {
@@ -254,10 +254,69 @@ footer a:hover{
 }
 
 .arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: auto 0;
+    font-size: 25px;
 }
 .arrow span {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+}
+
+.overlay {
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: rgba(39,47,50,0.7);
+    text-align: center;
+    padding: 30px 10px;
+    color: white;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+
+
+div.item {
+    position: relative;
+}
+
+
+
+
+
+.brand {
+    line-height: 1.25;
+}
+.brand-name {
+    font-size:15px;
+}
+
+.item-name {
+    margin-top: 40px;
+    padding: 0 12px;
+}
+
+.btn-overlay {
+    background-color: none;
+    padding: 3px 10px;
+    font-size: 12px;
+    border: 2px solid white;
+    border-radius: 0;
+    margin-top: 60px;
 }
